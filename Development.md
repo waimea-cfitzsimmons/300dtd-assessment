@@ -23,6 +23,8 @@ Figured out on how the database should be set up and interlink together. Got a b
 
 Replace this test with what you are working on
 
+![Alt text](images/outline1.png)
+
 Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
 
 > Replace this text with any user feedback / comments

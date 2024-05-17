@@ -27,29 +27,29 @@ I propose a website that acts as a database that users can use in order to: Crea
 
 ## Relevant Implications
 
-### IMPLICATION NAME HERE
+### User Control and Freedom
 
-Replace this text with a clear explanation of what the implication means.
+This means that when a user makes a mistake or changes their mind that they are easily able to undo that action or back out of whatever they are doing.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+It is important as a user could easily choose the wrong character or for the Game master to choose the wrong npc or input the wrong information
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+This means that I will have to make sure that the user can easily remove/swap out characters or edit/undo information about characters/npc's once they have changed it.
 
-### IMPLICATION NAME HERE
+### Consistency and Standards
 
-Replace this text with a clear explanation of what the implication means.
+It means that the user shouldn't have to wonder what words or symbols mean and using standard or commonly used words/symbols.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+If there are lots of difficult to understand symbols and words it will make it hard for the user to understand what they are doing or how to use the website..
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will need to always remember to use simple and common symbols in order to make sure that the user can understand the website clearly and easily.
 
-### IMPLICATION NAME HERE
+### Help Users recognise, Diagnose and Recover from Errors
 
-Replace this text with a clear explanation of what the implication means.
+Make it so that users can easily tell when someone has gone wrong with an error message and suggest a solution to the problem
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+If an error occurs on a website and its not clear to the user then it can be very frustrating for the user as they have no idea what is wrong or why the website is not working.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will need to have error pages that have clear simple messages explaining what has happened and what the user can do (e.g 404 error would tell the user that the page cannot be found and that they should try refreshing or using a different page)
 
 
 -------------------------------------------------

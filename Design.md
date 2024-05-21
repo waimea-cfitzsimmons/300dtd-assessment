@@ -27,35 +27,6 @@ I propose a website that acts as a database that users can use in order to: Crea
 
 ## Relevant Implications
 
-### User Control and Freedom
-
-This means that when a user makes a mistake or changes their mind that they are easily able to undo that action or back out of whatever they are doing.
-
-It is important as a user could easily choose the wrong character or for the Game master to choose the wrong npc or input the wrong information
-
-This means that I will have to make sure that the user can easily remove/swap out characters or edit/undo information about characters/npc's once they have changed it.
-
-### Consistency and Standards
-
-It means that the user shouldn't have to wonder what words or symbols mean and using standard or commonly used words/symbols.
-
-If there are lots of difficult to understand symbols and words it will make it hard for the user to understand what they are doing or how to use the website..
-
-I will need to always remember to use simple and common symbols in order to make sure that the user can understand the website clearly and easily.
-
-### Help Users recognise, Diagnose and Recover from Errors
-
-Make it so that users can easily tell when someone has gone wrong with an error message and suggest a solution to the problem
-
-If an error occurs on a website and its not clear to the user then it can be very frustrating for the user as they have no idea what is wrong or why the website is not working.
-
-I will need to have error pages that have clear simple messages explaining what has happened and what the user can do (e.g 404 error would tell the user that the page cannot be found and that they should try refreshing or using a different page)
-
-
--------------------------------------------------
-
-## Relevant User Experience (UX) Principles
-
 ### Accessibility 
 
 This means that everyone can user the website no matter what device they are using or if they have a disability such as color-blindness, dyslexia or a vision impairment. 
@@ -81,6 +52,33 @@ If the website is too difficult to user or understand then the users might as we
 I will have to use very clear and obvious buttons and labels so the end users 
 immediately know what they are doing. I will also have to keep the design and interface simple as not to overload the user with buttons and confuse them.
 
+-------------------------------------------------
+
+## Relevant User Experience (UX) Principles
+
+### User Control and Freedom
+
+This means that when a user makes a mistake or changes their mind that they are easily able to undo that action or back out of whatever they are doing.
+
+It is important as a user could easily choose the wrong character or for the Game master to choose the wrong npc or input the wrong information
+
+This means that I will have to make sure that the user can easily remove/swap out characters or edit/undo information about characters/npc's once they have changed it.
+
+### Consistency and Standards
+
+It means that the user shouldn't have to wonder what words or symbols mean and using standard or commonly used words/symbols.
+
+If there are lots of difficult to understand symbols and words it will make it hard for the user to understand what they are doing or how to use the website..
+
+I will need to always remember to use simple and common symbols in order to make sure that the user can understand the website clearly and easily.
+
+### Help Users recognise, Diagnose and Recover from Errors
+
+Make it so that users can easily tell when someone has gone wrong with an error message and suggest a solution to the problem
+
+If an error occurs on a website and its not clear to the user then it can be very frustrating for the user as they have no idea what is wrong or why the website is not working.
+
+I will need to have error pages that have clear simple messages explaining what has happened and what the user can do (e.g 404 error would tell the user that the page cannot be found and that they should try refreshing or using a different page)
 
 -------------------------------------------------
 

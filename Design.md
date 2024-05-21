@@ -56,29 +56,30 @@ I will need to have error pages that have clear simple messages explaining what 
 
 ## Relevant User Experience (UX) Principles
 
-### UX PRINCIPLE NAME HERE
+### Accessibility 
 
-Replace this text with a clear explanation of what the UX design principle means.
+This means that everyone can user the website no matter what device they are using or if they have a disability such as color-blindness, dyslexia or a vision impairment. 
 
-Replace this text with an explanation of why the principle is relevant to this particular project.
+This is relevant to this website because there is a very diverse group of people who play tabletop games and could use this website and it is also very likely that users would use a mobile device or laptop rather then a PC.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
+I will need to make sure that as I design and evolve the website and the UI that I keep in mind what it looks on mobile and smaller screens and keep it so that the website functions and is usable on all devices. I will also have to make sure that the color tones and combinations are contrast enough that people with poor vision will be able to read them easily as well as selection a good font to use for smaller screens and that isn't hard for people to read.
 
-### UX PRINCIPLE NAME HERE
+### Functionality 
 
-Replace this text with a clear explanation of what the UX design principle means.
+This means that the website works as intended and that it has a good experience for the end user in terms of serving its purpose. 
 
-Replace this text with an explanation of why the principle is relevant to this particular project.
+It is important for a website to work properly as intended otherwise there is no point in the website. Also I think I fail if my website doesn't function. 
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
+I will have to error test every time I update the website and let my end users use it multiple times over the course of development in order to make sure that there are no bugs or errors in my website and that everything is working as intended. 
 
-### UX PRINCIPLE NAME HERE
+### Usability
 
-Replace this text with a clear explanation of what the UX design principle means.
+This is how easy to use and understand the website is without the end user needing to be told how to use it.  
 
-Replace this text with an explanation of why the principle is relevant to this particular project.
+If the website is too difficult to user or understand then the users might as well go back to using pen and paper meaning that the website will be pointless 
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this principle.
+I will have to use very clear and obvious buttons and labels so the end users 
+immediately know what they are doing. I will also have to keep the design and interface simple as not to overload the user with buttons and confuse them.
 
 
 -------------------------------------------------

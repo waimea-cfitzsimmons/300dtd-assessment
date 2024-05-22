@@ -1,7 +1,7 @@
 # 300dtd-assessment
 This is my level 3 NCEA project for Digital Technologies
 
-![fear](Fear_jade.png)
+![fear](images/Fear_jade.png)
 
 It is a database-driven web app that allows users to:
 

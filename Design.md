@@ -17,12 +17,21 @@ People who play table top games often have to keep track of physical character s
 
 ### End-User Requirements
 
-The end users will be people who play table top games (such as Dungeons and Dragons)
+The end users will be people who play table top games (such as Dungeons and Dragons). This will especially be useful for people who have a difficult time keeping track of physical copies or keeping documents organised. this will also be advantageous for people who have difficulties writing with a pen and paper (such as people with dyspraxia) since it will allow them to type it up instead. This website would also help Dungeon masters organise and distribute information about the campaign and characters.
 
 ### Proposed Solution
 
-I propose a website that acts as a database that users can use in order to: Create player and Game Master accounts, create and store character and npc information and track character's health and abilities during combat.
+A website that acts as a database and also a sort of wikipedia for tabletop games and campaigns that people are hosting allowing users to store their information and make and manage campaigns. Users should be able to:
 
+Create accounts with a secure password
+
+Create a campaign that the creator of the campaign will be able to add other users to as players
+
+Create characters that will be stored on a database and will be able to be viewed by other players (but not edited)
+
+track and edit the stats and information about their characters
+
+access everything from a secure database
 
 -------------------------------------------------
 
@@ -46,12 +55,23 @@ I will have to error test every time I update the website and let my end users u
 
 ### Usability
 
-This is how easy to use and understand the website is without the end user needing to be told how to use it.  
+Usability is one of the most important implications as it involves how well the website is able to be used and accessed by its intended end-users. Usability is a very broad category but it was very clearly defined into subcategories by Jakob Nielssns with his 10 heuristics. These heuristics are 
 
-If the website is too difficult to user or understand then the users might as well go back to using pen and paper meaning that the website will be pointless 
+1: Visibility of System Status
+2: Match Between the System and the Real World
+3: User Control and Freedom
+4: Consistency and Standards
+5: Error Prevention
+6: Recognition Rather than Recall
+7: Flexibility and Efficiency of Use
+8: Aesthetic and Minimalist Design
+9: Help Users Recognize, Diagnose, and Recover from Errors
+10: Help and Documentation 
 
-I will have to use very clear and obvious buttons and labels so the end users 
-immediately know what they are doing. I will also have to keep the design and interface simple as not to overload the user with buttons and confuse them.
+Since there is already an alternative to my website (going back to pen and paper) then if I do not make the website usable or make it too difficult to understand then there is no reasons for the end-users to user my website.
+
+I will have to make sure I follow Nielsens 10 heuristics most importantly:
+
 
 -------------------------------------------------
 

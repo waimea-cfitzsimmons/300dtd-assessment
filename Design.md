@@ -55,7 +55,7 @@ I will have to error test every time I update the website and let my end users u
 
 ### Usability
 
-Usability is one of the most important implications as it involves how well the website is able to be used and accessed by its intended end-users. Usability is a very broad category but it was very clearly defined into subcategories by Jakob Nielssns with his 10 heuristics. These heuristics are 
+Usability is one of the most important implications as it involves how well the website is able to be used and accessed by its intended end-users. Usability is a very broad category but it was very clearly defined into subcategories by Jakob Nielssns with his 10 heuristics. These heuristics are: 
 
 1: Visibility of System Status
 2: Match Between the System and the Real World

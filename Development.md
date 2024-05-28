@@ -28,9 +28,11 @@ Making a flowchart using Excalidraw to decide the basic flow of the website
 I figured how the website should interlink and flow and decided that the user should start at a sign up/in page and then be sent to a main page where everything can be accessed from that page. I also decided that there will be two types of accounts a Player account who can make playable characters and view the campaign and npc information, and a game master who can create and add players too campaigns, make and manage npc's and view player character's information.
 
 
-### DATE HERE
+### 28/05/2024
 
-Replace this test with what you are working on
+Started creating a figma web design for how the UI will look
+
+![Alt text](images/figma1.png)
 
 Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
 

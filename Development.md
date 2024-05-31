@@ -30,21 +30,21 @@ I figured how the website should interlink and flow and decided that the user sh
 
 ### 28/05/2024
 
-Started creating a figma web design for how the UI will look
+Started creating a figma web design for how the website will function and how the UI will look on a basic level
 
 ![Alt text](images/figma1.png)
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+I started creating a figma web design for how the basic website will function in order to show the end users what kind of website it will be and how it will work. did not finish making it. 
 
-> Replace this text with any user feedback / comments
 
-Replace this text with notes describing how you acted upon the user feedback: made changes to design, etc.
 
-### DATE HERE
+### 31/05/2024
 
-Replace this test with what you are working on
+Finished first design of the figma version of the website
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+![Alt text](images/figma2.png)
+
+Finished off the campaign part of the Figma design and also interaction between the pages using the flow prototypes
 
 > Replace this text with any user feedback / comments
 

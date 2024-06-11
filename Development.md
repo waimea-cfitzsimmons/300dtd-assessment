@@ -44,21 +44,18 @@ Finished first design of the figma version of the website
 
 ![Alt text](images/figma2.png)
 
-Finished off the campaign part of the Figma design and also interaction between the pages using the flow prototypes
+Finished off the campaign part of the Figma design and also interaction between the pages using the flow prototypes.
 
-> Replace this text with any user feedback / comments
+### 4/06/2024
 
-Replace this text with notes describing how you acted upon the user feedback: made changes to design, etc.
+Added more details and changed around some of the font sizes and placement
 
-### DATE HERE
+added backgrounds to certain things on the page after end user's said the website seemed bland. I also made the titles bigger after end users commented that it looked very empty at the top of the pages. I also added a basic color scheme with a end user that we experimented various colors with.
 
-Replace this test with what you are working on
+![Alt text](images/figma3.png)
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+> end users commented that the website seemed kind of bland and flat. They also said that the top seemed kind of empty with the small text at the top.
 
-> Replace this text with any user feedback / comments
-
-Replace this text with notes describing how you acted upon the user feedback: made changes to design, etc.
 
 ### DATE HERE
 

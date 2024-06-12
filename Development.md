@@ -46,16 +46,18 @@ Finished first design of the figma version of the website
 
 Finished off the campaign part of the Figma design and also interaction between the pages using the flow prototypes.
 
-### 4/06/2024
+### 11/06/2024
 
-Added more details and changed around some of the font sizes and placement
+talked with end users and added colour scheme aswell as small changes.
 
-added backgrounds to certain things on the page after end user's said the website seemed bland. I also made the titles bigger after end users commented that it looked very empty at the top of the pages. I also added a basic color scheme with a end user that we experimented various colors with.
+I added a color scheme to the website aswell as made some changes based on user feedback. I also added a colour scheme to the website and experimented with various colour pallots.
 
-![Alt text](images/figma3.png)
+![image](https://github.com/waimea-cfitzsimmons/300dtd-assessment/assets/158527099/b5abc9c2-df34-4f47-8ac3-3e2902610d47)
 
-> end users commented that the website seemed kind of bland and flat. They also said that the top seemed kind of empty with the small text at the top.
 
+End users made several comments about the design of the website. They said that the text at the top of some of the screens was to small and that it made it look empty. They also commented that the welcome screen text was too cluttered. They also pointed out several small UI changes that should be made such as the pop out menu buttons overlapping on certain pages. 
+
+I acted apon the user feedback by making the heading text larger and more centeral. I also changed the welcome page to only say "welcome". I also touched up smaller areas of the UI and added a backdrop to certain areas in order to make it less empty.
 
 ### DATE HERE
 

@@ -85,3 +85,11 @@ article {
     min-height: 6rem;
 }
 
+li[hx-get] {
+    cursor: pointer;
+}
+
+li[hx-get]:hover {
+    color: var(--accent-color);
+}
+

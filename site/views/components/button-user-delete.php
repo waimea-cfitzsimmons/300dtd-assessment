@@ -1,7 +1,4 @@
-<?php 
-    // Fake data
-    $id = 13;
-?>
+
 
 <h2>Delete User Record via DELETE</h2>
 

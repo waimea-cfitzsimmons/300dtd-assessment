@@ -21,4 +21,4 @@
     <!-- Load Nav script -->
     <script src="/js/nav.js"></script>
 
-</head>
+</head>   

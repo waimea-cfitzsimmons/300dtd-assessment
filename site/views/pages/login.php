@@ -1,4 +1,7 @@
-<form method="POST" action="process-login.php">
+<form
+    hx-post="/process-login"
+    hx-trigger="submit"
+>
     <label>username</label>
     <input name="user" type="text" required>
 

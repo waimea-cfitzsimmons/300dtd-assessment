@@ -3,12 +3,24 @@ require_once "lib/db.php";
 require_once 'lib/session.php';
 $db = connectToDB();
 $userId = $_SESSION['user']['id'] ?? false;
+
 // Get the image type and binary data
-$query = 'SELECT id, `name`, `description`, `health`, `strength`, `dexterity`, `charisma`, `intelligence`, `wisdom`, `constitution`, `creator`
+$query = 'SELECT characters.id AS charID, 
+                 characters.`name`, 
+                 characters.`description`, 
+                 characters.`health`, 
+                 characters.`strength`, 
+                 characters.`dexterity`, 
+                 characters.`charisma`, 
+                 characters.`intelligence`, 
+                 characters.`wisdom`, 
+                 characters.`constitution`,
+                 users.username,
+                 users.id AS userID
 FROM characters 
 JOIN users 
-ON feedback.author = users.id 
-WHERE id=?';
+ON characters.creator = users.id 
+WHERE characters.id=?';
 
 try {
     $stmt = $db->prepare($query);
@@ -25,7 +37,7 @@ echo '<h2>Name: ' . $character['name'] . '</h2>';
 
 echo '<p>Description: ' . $character['description'] . '</p>';
 
-echo '<p>Health: ' . $character['health'] . '</p>';
+echo '<p>Max Health: ' . $character['health'] . '</p>';
 
 echo '<p>Strength: ' . $character['strength'] . '</p>';
 
@@ -39,15 +51,15 @@ echo '<p>Wisdom: ' . $character['wisdom'] . '</p>';
 
 echo '<p>Constitution: ' . $character['constitution'] . '</p>';
 
-echo '<p>Creator: ' . $character['creator'] . '</p>';
+echo '<p>Creator: ' . $character['username'] . '</p>';  // TODO use $character['userID'] to link to player page
 
-if($character['creator']== $userId) {
+if($character['userID']== $userId) {
 
-echo '<button
-hx-delete="/character/<?= $id ?>"
-hx-target="#character-info"
->
-Delete User
-</button>';
+    echo '<button
+            hx-delete="/character/<?= $id ?>"
+            hx-target="#character-info"
+            >
+            Delete Character
+            </button>';
 
 }

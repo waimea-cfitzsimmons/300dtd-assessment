@@ -51,7 +51,17 @@ echo '<p>Wisdom: ' . $character['wisdom'] . '</p>';
 
 echo '<p>Constitution: ' . $character['constitution'] . '</p>';
 
-echo '<p>Creator: ' . $character['username'] . '</p>';  // TODO use $character['userID'] to link to player page
+echo '<p>Creator: ' . $character['username'] . '</p>';
+
+echo '<li
+hx-trigger="click"
+hx-get="/user/' . $character['userID'] . '"
+hx-target="#character-info"
+>';
+echo $character['name'];
+echo '</li>';
+
+// TODO use $character['userID'] to link to player page
 
 if($character['userID']== $userId) {
 

@@ -58,15 +58,16 @@ hx-trigger="click"
 hx-get="/user/' . $character['userID'] . '"
 hx-target="#character-info"
 >';
-echo $character['name'];
+echo $character['username'];
 echo '</li>';
 
 // TODO use $character['userID'] to link to player page
 
+
 if($character['userID']== $userId) {
 
     echo '<button
-            hx-delete="/character/<?= $id ?>"
+            hx-delete="/character/'.$character['charID'].'"
             hx-target="#character-info"
             >
             Delete Character

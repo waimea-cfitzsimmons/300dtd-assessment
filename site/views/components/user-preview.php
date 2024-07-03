@@ -20,35 +20,36 @@ catch (PDOException $e) {
 }
 
 
-// $query = 'SELECT characters.id AS charID, 
-//                  characters.name,
-//                  characters.creator,
-//                  users.id AS userID
-// FROM characters 
-// JOIN users 
-// ON characters.creator = users.id 
-// WHERE characters.creator=?';
+$query = 'SELECT characters.id AS charID, 
+                 characters.name,
+                 characters.creator,
+                 users.id AS userID
+FROM characters 
+JOIN users 
+ON characters.creator = users.id 
+WHERE characters.creator=?';
 
-// try {
-//     $stmt = $db->prepare($query);
-//     $stmt->execute([$id]);
-//     $characters = $stmt->fetch();
-// }
+try {
+    $stmt = $db->prepare($query);
+    $stmt->execute([$id]);
+    $characters = $stmt->fetchAll();
+}
 
-// catch (PDOException $e) {
-//     consoleError($e->getMessage(), 'DB Fetch things error');
-//     die('There was an error getting things from data base');
-// }
+catch (PDOException $e) {
+    consoleError($e->getMessage(), 'DB Fetch things error');
+    die('There was an error getting things from data base');
+}
 
 echo '<h1>' . $user['username'] . '</h1>';
 echo '<h2> List of Characters: </h2>';
-// foreach ($characters as $character) {
-//     echo'<h3>character</h3>';
-// }
+foreach ($characters as $character) {
+    echo '<li
+    hx-trigger="click"
+    hx-get="/character/' . $character['charID'] . '"
+    hx-target="#character-info"
+>';
+echo $character['name'];
+echo '</li>';
+}
 
 ?>
-<div
-    id="character-list"
-    hx-get="/character-list/.$users['id']."
-    hx-trigger="load"
-></div>

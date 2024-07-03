@@ -6,7 +6,7 @@ hx-post="/add-character"
 
         <h2>Add a New Character</h2>
 
-        <label>Title</label>
+        <label>Name</label>
         <input type="text" name="name" required>
 
         <label>Description</label>

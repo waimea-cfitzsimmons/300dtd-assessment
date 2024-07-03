@@ -38,7 +38,6 @@ $router->route(POST, HTMX, '/process-login', 'actions/process-login.php');
 $router->route(POST, HTMX, '/add-character', 'actions/add-character.php');
 $router->route(POST, HTMX, '/sign-up', 'actions/add-user.php');
 $router->route(GET, HTMX, '/character-list', 'components/character-list.php');
-$router->route(GET, HTMX, '/character-list/$creator', 'components/user-character-list.php');
 $router->route(GET, HTMX, '/character/$id', 'components/character-preview.php');
 $router->route(DELETE, HTMX, '/character/$id', 'actions/delete-character.php');
 //-------------------------------------------------------------

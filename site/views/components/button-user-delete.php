@@ -6,7 +6,7 @@
 
 <p>
     <button
-        hx-delete="/user/<?= $id ?>"
+        hx-delete="/character/<?= $character['charID'] ?>"
         hx-target="#request-result"
         hx-confirm="Really delete this user?"
         class="danger"

@@ -1,4 +1,3 @@
-<!-- Generate a list of things, e.g. from a database -->
 
 <ul>
 
@@ -6,7 +5,7 @@
 require_once "lib/db.php";
 $db = connectToDB();
 
-// Get the picture associated info, but NOT the image data
+// get character data
 $query = 'SELECT id, name FROM characters ORDER BY id DESC';
 
 try {
@@ -18,17 +17,23 @@ catch (PDOException $e) {
     consoleError($e->getMessage(), 'DB Fetch Things');
     die('There was an error getting things from the database');
 }
+echo'<h1>Character list</h1>';
 
-// Work through all pictures
+echo'<p>all characters</p>';
+
+echo '<p><a href="/new-character" role="button">Create Character </a></p>';
+// Work through all characters
 foreach ($characters as $character) {
 
 
     echo '<li
     hx-trigger="click"
     hx-get="/character/' . $character['id'] . '"
-    hx-target="#character-info"
+    hx-push-url="true"
+    hx-target="#info"
 >';
 echo $character['name'];
 echo '</li>';
 }
+
 ?>

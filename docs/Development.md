@@ -59,14 +59,18 @@ End users made several comments about the design of the website. They said that 
 
 I acted apon the user feedback by making the heading text larger and more centeral. I also changed the welcome page to only say "welcome". I also touched up smaller areas of the UI and added a backdrop to certain areas in order to make it less empty.
 
-### DATE HERE
+### 13/06/2024
 
-Replace this test with what you are working on
+Added a rough outline for how the database will connect
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Each character will have a creator and each campaign will have a dm
 
-> Replace this text with any user feedback / comments
 ![Alt text](image.png)
 
-Replace this text with notes describing how you acted upon the user feedback: made changes to design, etc.
+### 23/07/2024
 
+Made prototype and refining it
+
+Ran into problems with the UI design and how it all interacts
+
+![Alt text](image-1.png)

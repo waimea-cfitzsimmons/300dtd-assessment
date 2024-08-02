@@ -9,6 +9,12 @@ hx-post="/add-character"
         <label>Name</label>
         <input type="text" name="name" required>
 
+        <label>Image</label>
+        <input type="file"
+               name="image"
+               accept="image/*"
+               required>
+
         <label>Description</label>
         <input type="text" name="desc" required>
 

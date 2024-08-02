@@ -1,12 +1,12 @@
-<section id ="all">
+<section>
 
     <article>
         <ul>
-        <section id="characters">
+        <section id="users">
 
 <div
     id="list"
-    hx-get="/character-list"
+    hx-get="/user-preview/1"
     hx-trigger="load"
 ></div>
 </article>

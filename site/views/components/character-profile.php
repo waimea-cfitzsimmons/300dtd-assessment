@@ -4,7 +4,7 @@ require_once 'lib/session.php';
 $db = connectToDB();
 $userId = $_SESSION['user']['id'] ?? false;
 
-// Get the image type and binary data
+// Get the character info and creator id
 $query = 'SELECT characters.id AS charID, 
                  characters.`name`, 
                  characters.`description`, 
@@ -33,7 +33,11 @@ catch (PDOException $e) {
     die('There was an error getting things from data base');
 }
 
+// echo out all the character stats
+
 echo '<h2>Name: ' . $character['name'] . '</h2>';
+
+echo '<img src="image.php?id=' . $character['charID'] . '">';
 
 echo '<p>Description: ' . $character['description'] . '</p>';
 
@@ -51,26 +55,10 @@ echo '<p>Wisdom: ' . $character['wisdom'] . '</p>';
 
 echo '<p>Constitution: ' . $character['constitution'] . '</p>';
 
-echo '<p>Creator: ' . $character['username'] . '</p>';
-
-echo '<li
+echo '<p id="userLink"
 hx-trigger="click"
 hx-get="/user/' . $character['userID'] . '"
-hx-target="#character-info"
->';
-echo $character['username'];
-echo '</li>';
+hx-push-url="true"
+hx-target="#list">Creator: ' . $character['username'] . '</p>';
 
-// TODO use $character['userID'] to link to player page
-
-
-if($character['userID']== $userId) {
-
-    echo '<button
-            hx-delete="/character/'.$character['charID'].'"
-            hx-target="#character-info"
-            >
-            Delete Character
-            </button>';
-
-}
+// if the character is the users character then add delete button

@@ -2,20 +2,30 @@
 
     <article>
 
-        <h1>Why I am awesome</h1>
+        <h1>Campaign List</h1>
 
-        <p>Everyone knows that im probably the coolest person ever
+        <p>List of campaigns
 
         <ul>
-            <li><strong>Im Cam</strong> I am literally THE Cameron Fitzsimmons</li>
-            <li><strong>Im from the great white north</strong> God bless Canada</li>
-            <li><strong>I said so</strong> And im always right</li>
-            <li><a href="https://htmx.org/"><strong>HTMX</strong></a> component support</li>
+        <section id="campaigns">
+
+<div
+    id="list"
+    hx-get="/campaign-list"
+    hx-trigger="load"
+></div>
+<p><a href="/new-campaign" role="button">Start Campaign</a></p>
+
+</article>
+
+<article>
+<div id="info">
+    <h2>Select a campaign</h2>
+    <p>To find out information about the campaign</p>
+</div>
+</section>
         </ul>
 
     </article>
 
 </section>
-
-
-

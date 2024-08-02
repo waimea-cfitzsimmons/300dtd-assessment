@@ -1,12 +1,6 @@
 <?php
 require_once "lib/db.php";
 consoleLog($_POST, 'POST');
-consoleLog($_FILES, 'FILES');
-if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file (probably too large)');
-[
-    'data' => $imageData,
-    'type' => $imageType
-] = uploadedImageData($_FILES['image']);
 
 // Get other data from form
 $name = $_POST['name'];
@@ -22,11 +16,11 @@ $plyrid = $_POST['creator'];
 // Insert the image into the database
 $db = connectToDB();
 
-$query = 'INSERT INTO characters (`name`, `description`, `health`, `strength`, `dexterity`, `charisma`, `intelligence`, `wisdom`, `constitution`, `creator`, `imageType`, `imageData`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+$query = 'INSERT INTO characters (`name`, `description`, `health`, `strength`, `dexterity`, `charisma`, `intelligence`, `wisdom`, `constitution`, `creator`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$name, $desc, $hp, $chr, $str, $wis, $dex, $int, $con, $plyrid, $imageType, $imageData]);
+    $stmt->execute([$name, $desc, $hp, $chr, $str, $wis, $dex, $int, $con, $plyrid]);
 }
 catch (PDOException $e) {
     consoleError($e->getMessage(), 'DB Upload Picture');

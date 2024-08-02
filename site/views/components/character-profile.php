@@ -37,7 +37,11 @@ catch (PDOException $e) {
 
 echo '<h2>Name: ' . $character['name'] . '</h2>';
 
-echo '<img src="image.php?id=' . $character['charID'] . '">';
+// $imageURL = 'components/image/' . $character['charID'].'';
+
+// echo '<img src="components/image/' . $character['charID'].'">';
+
+echo   '<img src="/image.php?id=' . $character['charID'] . '">';
 
 echo '<p>Description: ' . $character['description'] . '</p>';
 
@@ -62,3 +66,14 @@ hx-push-url="true"
 hx-target="#list">Creator: ' . $character['username'] . '</p>';
 
 // if the character is the users character then add delete button
+
+if($character['userID']== $userId) {
+
+    echo '<button
+            hx-delete="/character/'.$character['charID'].'"
+            hx-target="#info"
+            >
+            Delete Character
+            </button>';
+
+}

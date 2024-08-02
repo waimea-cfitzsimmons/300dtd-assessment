@@ -75,10 +75,10 @@ echo '<p>'.$character['description'].'</p>';
 
 if($campaign['userID']== $userId) {
 
-    echo '<p><a href="/assign-character'.$campaign['camID'].'" role="button">Add Character</a></p>';
+    echo '<p><a href="/assign-character/'.$campaign['camID'].'" role="button">Add Character</a></p>';
 
     echo '<button
-            hx-delete="/character/'.$campaign['camID'].'"
+            hx-delete="/campaign/'.$campaign['camID'].'"
             hx-target="#info"
             >
             Delete Campaign

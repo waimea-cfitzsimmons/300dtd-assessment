@@ -100,3 +100,10 @@ li[hx-get]:hover {
 #userLink:hover {
     color: var(--accent-color);
 }
+
+img {
+    display: block;
+    max-width: 15rem;
+    height: auto;
+    align-self: center;
+}

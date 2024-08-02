@@ -1,5 +1,10 @@
 <?php
 
+require_once 'lib/db.php';
+
+$id=$_GET['id'] ?? null;
+if($id == null) die('Missing or invalid ID');
+
 $db = connectToDB();
 
 $query = 'SELECT imageType, imageData FROM characters WHERE id=?';

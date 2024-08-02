@@ -35,9 +35,9 @@ $router->route(GET, PAGE, '/characters', 'pages/characters.php');
 $router->route(GET, PAGE, '/users', 'pages/users.php');
 $router->route(GET, PAGE, '/log-out', 'actions/log-out.php');
 $router->route(GET, PAGE, '/new-character', 'pages/new-character.php');
+$router->route(GET, PAGE, '/assign-character/$id', 'pages/assign-character.php');
 $router->route(GET, PAGE, '/new-campaign', 'pages/new-campaign.php');
 $router->route(GET, PAGE, '/assign-character/$id', 'actions/assign-character.php');
-$router->route(GET, HTMX, 'image/$id', 'components/image.php');
 $router->route(POST, HTMX, '/process-login', 'actions/process-login.php');
 $router->route(POST, HTMX, '/add-character', 'actions/add-character.php');
 $router->route(POST, HTMX, '/add-campaign', 'actions/add-campaign.php');
@@ -47,6 +47,7 @@ $router->route(GET, HTMX, '/campaign-list', 'components/campaign-list.php');
 $router->route(GET, HTMX, '/campaign/$id', 'components/campaign-preview.php');
 $router->route(GET, HTMX, '/character/$id', 'components/character-profile.php');
 $router->route(DELETE, HTMX, '/character/$id', 'actions/delete-character.php');
+$router->route(DELETE, HTMX, '/campaign/$id', 'actions/delete-campaign.php');
 //-------------------------------------------------------------
 // Generate the required view
 $router->view();

@@ -65,7 +65,7 @@ Added a rough outline for how the database will connect
 
 Each character will have a creator and each campaign will have a dm
 
-![Alt text](image.png)
+![Alt text](images/database.png)
 
 ### 23/07/2024
 
@@ -73,4 +73,12 @@ Made prototype and refining it
 
 Ran into problems with the UI design and how it all interacts
 
-![Alt text](image-1.png)
+![Alt text](images/old-layout.png)
+
+### 02/08/2024
+
+Got images working for the character profiles
+
+Ran into problems with the UI design and how it all interacts
+
+![Alt text](images/images.png)

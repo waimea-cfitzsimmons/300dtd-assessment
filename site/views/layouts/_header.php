@@ -3,6 +3,7 @@
 <?php global $loggedIn ?>
 <?php global $userName ?>
 <?php global $userId ?>
+<?php global $campaignID ?>
 
 <header id="main-header">
     

@@ -71,6 +71,7 @@ echo '</h4>';
 echo '<p>'.$character['description'].'</p>';
 }
 
+$campaignID = $campaign['camID'];
 
 
 if($campaign['userID']== $userId) {

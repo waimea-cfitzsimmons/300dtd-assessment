@@ -9,6 +9,7 @@ require_once 'lib/router.php';
 $loggedIn = $_SESSION['user']['loggedIn'] ?? false;
 $userName = $_SESSION['user']['username'] ?? 'Guest';
 $userId = $_SESSION['user']['id'] ?? false;
+$campaignID = '1';
 
 //-------------------------------------------------------------
 // Site Configuration
@@ -37,7 +38,7 @@ $router->route(GET, PAGE, '/log-out', 'actions/log-out.php');
 $router->route(GET, PAGE, '/new-character', 'pages/new-character.php');
 $router->route(GET, PAGE, '/assign-character/$id', 'pages/assign-character.php');
 $router->route(GET, PAGE, '/new-campaign', 'pages/new-campaign.php');
-$router->route(GET, PAGE, '/assign-character/$id', 'actions/assign-character.php');
+$router->route(POST, HTMX, '/assign-character/$id', 'actions/assign-character.php');
 $router->route(POST, HTMX, '/process-login', 'actions/process-login.php');
 $router->route(POST, HTMX, '/add-character', 'actions/add-character.php');
 $router->route(POST, HTMX, '/add-campaign', 'actions/add-campaign.php');

@@ -45,19 +45,71 @@ echo   '<img src="/image.php?id=' . $character['charID'] . '">';
 
 echo '<p>Description: ' . $character['description'] . '</p>';
 
-echo '<p>Max Health: ' . $character['health'] . '</p>';
+echo '<table>';
 
-echo '<p>Strength: ' . $character['strength'] . '</p>';
+echo '<tr>';
 
-echo '<p>Dexterity: ' . $character['dexterity'] . '</p>';
+echo '<th>Stat:</th>';
 
-echo '<p>Charisma: ' . $character['charisma'] . '</p>';
+echo '<th>Points:</th>';
 
-echo '<p>Intelligence: ' . $character['intelligence'] . '</p>';
+echo '</tr>';
 
-echo '<p>Wisdom: ' . $character['wisdom'] . '</p>';
+echo '<tr>';
 
-echo '<p>Constitution: ' . $character['constitution'] . '</p>';
+echo '<td>Max Health</td>';
+
+echo '<td>' . $character['health'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Strength</td>';
+
+echo '<td>' . $character['strength'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Dexterity</td>';
+
+echo '<td>' . $character['dexterity'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Charisma</td>';
+
+echo '<td>' . $character['charisma'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Intelligence</td>';
+
+echo '<td>' . $character['intelligence'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Wisdom</td>';
+
+echo '<td>' . $character['wisdom'] . '</td>';
+
+echo '</tr>';
+
+echo '<tr>';
+
+echo '<td>Constitution</td>';
+
+echo '<td>' . $character['constitution'] . '</td>';
+
+echo '</tr>';
 
 echo '<p id="userLink"
 hx-trigger="click"

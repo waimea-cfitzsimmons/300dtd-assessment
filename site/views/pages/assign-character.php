@@ -14,19 +14,19 @@
         die('There was an error getting things from the database');
     }
     echo'<h1>Please select characters to add to the campaign</h1>';
-
+    echo'<article>';
     echo '<form
-    hx-post="/add-character_camp"
+    id=assignchar
+    hx-post="/assign-character"
     hx-trigger="submit"
     enctype="multipart/form-data">';
-    echo '<input name="campaign_id" type="hidden" value=""'.$id.'"">';
-    echo '<p>Campaign ID is'.$id.'</p>';
+    echo '<input name="campaign_id" type="hidden"value="'.$id.'">';
     foreach ($characters as $character) {
 
-    echo $character['name'];
-
-
-    echo '<input type="checkbox" name="character_id" value=""'.$character['id'].'"">';
+    echo '<div>';
+        echo $character['name'];
+        echo '<input id=char_input type="radio" name="character_id" value="'.$character['id'].'">';
+    echo'</div>';
 
 }
 echo '<input type="submit" value="Add">';

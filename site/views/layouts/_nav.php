@@ -5,7 +5,6 @@
     <menu hx-boost="true">
     <?php if($loggedIn) {
     echo '<li><a href="/home">Home</a>';
-    echo '<li><a href="/about">About</a>';
     echo '<li><a href="/campaigns">Campaigns</a>';
     echo '<li><a href="/characters">Characters</a>';
     

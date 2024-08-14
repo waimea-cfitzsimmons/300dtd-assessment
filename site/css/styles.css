@@ -1,109 +1,121 @@
-:root {
-    --font-size:         1rem;
+    :root {
+        --font-size:         1rem;
 
-    --border-color:      var(--pico-muted-border-color);
-    --accent-color:      var(--pico-color-pumpkin);
+        --border-color:      var(--pico-muted-border-color);
+        --accent-color:      var(--pico-color-pumpkin);
 
-    --link-active-color: var(--accent-color);
-}
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+        --link-active-color: var(--accent-color);
+    }
 
 
-/* HEADER ---------------------------------------- */
-
-#main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border-color);
-    margin-bottom: 2rem;
-}
-
-#main-header > * {
-    margin: 0;
-}
-
-#main-header > a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: inherit;
-}
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
 
-/* FOOTER ---------------------------------------- */
+    /* HEADER ---------------------------------------- */
 
-#main-footer {
-    text-align: center;
-    border-top: 1px solid var(--border-color);
-    margin-top: 2rem;
-}
+    #main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 2rem;
+    }
 
+    #main-header > * {
+        margin: 0;
+    }
 
-/* NAV ---------------------------------------- */
-
-#main-nav {
-    align-items: center;
-    font-size: 1.1rem;
-}
-
-#main-nav menu {
-    margin: 0;
-}
-
-
-#main-nav a[aria-current="page"] {
-    color: var(--link-active-color);
-    text-decoration: underline;
-}
+    #main-header > a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+    }
 
 
-/* MAIN ---------------------------------------- */
+    /* FOOTER ---------------------------------------- */
 
-main {
-    flex: 1;
-    max-width: 60rem;
-}
+    #main-footer {
+        text-align: center;
+        border-top: 1px solid var(--border-color);
+        margin-top: 2rem;
+    }
 
 
-/* LAYOUT ---------------------------------------- */
+    /* NAV ---------------------------------------- */
 
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
-}
+    #main-nav {
+        align-items: center;
+        font-size: 1.1rem;
+    }
 
-article {
-    border: 1px solid var(--border-color);
-    min-height: 6rem;
-}
+    #main-nav menu {
+        margin: 0;
+    }
 
-li[hx-get] {
-    cursor: pointer;
-}
 
-li[hx-get]:hover {
-    color: var(--accent-color);
-}
+    #main-nav a[aria-current="page"] {
+        color: var(--link-active-color);
+        text-decoration: underline;
+    }
 
-#userLink {
-    cursor: pointer;
-}
 
-#userLink:hover {
-    color: var(--accent-color);
-}
+    /* MAIN ---------------------------------------- */
 
-img {
-    display: block;
-    max-width: 15rem;
-    height: auto;
-    align-self: center;
-}
+    main {
+        flex: 1;
+        max-width: 60rem;
+    }
+
+    /* FORMS -------------------------------*/
+
+    #assignchar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    /* LAYOUT ---------------------------------------- */
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+    }
+
+    article {
+        border: 1px solid var(--border-color);
+        min-height: 6rem;
+    }
+
+    li[hx-get] {
+        cursor: pointer;
+    }
+
+    li[hx-get]:hover {
+        color: var(--accent-color);
+    }
+
+    #userLink {
+        cursor: pointer;
+    }
+
+    #userLink:hover {
+        color: var(--accent-color);
+    }
+
+    img {
+        display: block;
+        max-width: 15rem;
+        height: auto;
+        align-self: center;
+    }
+
+    article {
+        max-width: 30rem;
+    }

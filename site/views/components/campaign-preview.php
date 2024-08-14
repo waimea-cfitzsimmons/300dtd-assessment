@@ -31,7 +31,7 @@ echo '<h1>' . $campaign['title'] . '</h1>';
 echo '<p id="userLink" hx-trigger="click"
 hx-get="/user/' . $campaign['userID'] . '"
 hx-push-url="true"
-hx-target="#info">Dungeon Master: ' . $campaign['username'] . '</p>';
+hx-target="#list">Dungeon Master: ' . $campaign['username'] . '</p>';
 
 echo '<p>Description: ' . $campaign['description'] . '</p>';
 
@@ -64,7 +64,7 @@ foreach ($characters as $character) {
     hx-trigger="click"
     hx-get="/character/' . $character['charID'] . '"
     hx-push-url="true"
-    hx-target="#info"
+    hx-target="#extra"
 >';
 echo $character['name'];
 echo '</h4>';

@@ -16,6 +16,6 @@ try {
 }
 catch (PDOException $e) {
     consoleError($e->getMessage(), 'DB Upload Picture');
-    die('There was an error adding picture to the database');
+    die('Character already in campaign!');
 }
 header('HX-Redirect: ' . SITE_BASE . '/campaigns');

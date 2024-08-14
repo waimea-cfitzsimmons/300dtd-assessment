@@ -71,7 +71,7 @@ Each character will have a creator and each campaign will have a dm
 
 Made prototype and refining it
 
-Ran into problems with the UI design and how it all interacts
+Ran into problems with the UI design and how it all interacts. The UI was clunky and felt like a maze to navigate. User feedback also confirmed this. Main cause of problem is the transition from the character/campaign list to the users page.
 
 ![Alt text](images/old-layout.png)
 
@@ -79,6 +79,14 @@ Ran into problems with the UI design and how it all interacts
 
 Got images working for the character profiles
 
-Ran into problems with the UI design and how it all interacts
+Changed how the UI looks with two seperate sections for the list and the profile. Also added images to the characters. The Navigation is slightly better but still needs improvement. Currently the admin page has been moved to replace the list instead of the character profile 
 
 ![Alt text](images/images.png)
+
+## 13/08/2024
+
+Added back button and updated the character profile
+
+enduser feedback spoke about how they would get 'trapped' on a profile or user page so I added a back button that will return the user to the character list and whatever profile they were looking at. Also updated the stats table by making it an actual table in order to make it look nicer. 
+
+![Alt text](images/ui_improved.png)

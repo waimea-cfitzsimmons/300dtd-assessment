@@ -1,4 +1,4 @@
-<section id ="all">
+<section id="charlist">
 
     <article>
         <ul>

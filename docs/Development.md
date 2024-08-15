@@ -90,3 +90,9 @@ Added back button and updated the character profile
 enduser feedback spoke about how they would get 'trapped' on a profile or user page so I added a back button that will return the user to the character list and whatever profile they were looking at. Also updated the stats table by making it an actual table in order to make it look nicer. 
 
 ![Alt text](images/ui_improved.png)
+
+# 15/08/2024
+
+Enduser feedback on campaign page design.
+End user commented on how it was annoying to have to go back to click on a different character in a campaign. I added a third pannel to the campaign view so that they can quickly browse through the character involved in a campaign.
+![image](https://github.com/user-attachments/assets/361f9adb-6601-48c8-ab2c-f2e908e280e5)

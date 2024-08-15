@@ -13,3 +13,5 @@ hx-post="/sign-up"
 
         <input type="submit" value="Add">
     </form>
+<h2>Dont have an account?</h2>
+<p><a href="/signup" role="button">Sign Up </a></p>

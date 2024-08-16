@@ -1,3 +1,4 @@
+<section class=forum>
 <form     
 hx-post="/sign-up"
     hx-trigger="submit"
@@ -13,5 +14,6 @@ hx-post="/sign-up"
 
         <input type="submit" value="Add">
     </form>
-<h2>Dont have an account?</h2>
-<p><a href="/signup" role="button">Sign Up </a></p>
+<h2>Already have an account?</h2>
+<p class=button><a href="/login" role="button">Log in </a></p>
+</section>

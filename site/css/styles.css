@@ -7,6 +7,7 @@
         --link-active-color: var(--accent-color);
     }
 
+    
 
     body {
         display: flex;
@@ -68,19 +69,131 @@
 
     main {
         flex: 1;
-        max-width: 60rem;
+        max-width: 200rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #backbutton {
+        position: fixed;
+        left: 1rem;
+        bottom: 1rem;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--border-color);
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+    }
+
+    #backbutton:hover {
+        position: fixed;
+        left: 1rem;
+        bottom: 1rem;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--border-color);
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        transform: scale(1.1);
     }
 
     /* FORMS -------------------------------*/
 
     #assignchar {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    section.forum {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    p.button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* HOMEPAGE --------------------------------------*/
+
+    #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /* WELCOMEPAGE --------------------------------------*/
+
+    #welcome {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    div.welcome{
+        display: flex;
         justify-content: space-between;
         gap: 1rem;
     }
 
     /* LAYOUT ---------------------------------------- */
+
+    section.align{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+    
+    @media screen and (max-width: 60rem) {
+    
+        #campaign_page {
+            flex:1;
+            min-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #char_list {
+            flex: 1;
+            max-width: 60rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width: 60rem) {
+    
+        #campaign_page {
+            flex:1;
+            min-width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #char_list {
+            flex: 1;
+            max-width: 60rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article {
+            flex: 1;
+            min-width: 25rem;
+        }
+    }
 
     section {
         display: grid;

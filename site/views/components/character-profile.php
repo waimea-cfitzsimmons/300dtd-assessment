@@ -1,131 +1,126 @@
 <?php
-require_once "lib/db.php";
-require_once 'lib/session.php';
-$db = connectToDB();
-$userId = $_SESSION['user']['id'] ?? false;
+    require_once "lib/db.php";
+    require_once 'lib/session.php';
+    $db = connectToDB();
+    $userId = $_SESSION['user']['id'] ?? false;
 
-// Get the character info and creator id
-$query = 'SELECT characters.id AS charID, 
-                 characters.`name`, 
-                 characters.`description`, 
-                 characters.`health`, 
-                 characters.`strength`, 
-                 characters.`dexterity`, 
-                 characters.`charisma`, 
-                 characters.`intelligence`, 
-                 characters.`wisdom`, 
-                 characters.`constitution`,
-                 users.username,
-                 users.id AS userID
-FROM characters 
-JOIN users 
-ON characters.creator = users.id 
-WHERE characters.id=?';
+    // Get the character info and creator id
+    $query = 'SELECT characters.id AS charID, 
+                    characters.`name`, 
+                    characters.`description`, 
+                    characters.`health`, 
+                    characters.`strength`, 
+                    characters.`dexterity`, 
+                    characters.`charisma`, 
+                    characters.`intelligence`, 
+                    characters.`wisdom`, 
+                    characters.`constitution`,
+                    users.username,
+                    users.id AS userID
+    FROM characters 
+    JOIN users 
+    ON characters.creator = users.id 
+    WHERE characters.id=?';
 
-try {
-    $stmt = $db->prepare($query);
-    $stmt->execute([$id]);
-    $character = $stmt->fetch();
+    try {
+        $stmt = $db->prepare($query);
+        $stmt->execute([$id]);
+        $character = $stmt->fetch();
 
-}
-catch (PDOException $e) {
-    consoleError($e->getMessage(), 'DB Fetch things error');
-    die('There was an error getting things from data base');
-}
+    }
+    catch (PDOException $e) {
+        consoleError($e->getMessage(), 'DB Fetch things error');
+        die('There was an error getting things from data base');
+    }
 
-// echo out all the character stats
+    // echo out all the character stats
+    echo '<h2>Name: ' . $character['name'] . '</h2>';
 
-echo '<h2>Name: ' . $character['name'] . '</h2>';
+    echo   '<img src="/image.php?id=' . $character['charID'] . '">';
 
-// $imageURL = 'components/image/' . $character['charID'].'';
+    echo '<p>Description: ' . $character['description'] . '</p>';
 
-// echo '<img src="components/image/' . $character['charID'].'">';
+    echo '<table>';
 
-echo   '<img src="/image.php?id=' . $character['charID'] . '">';
+    echo '<tr>';
 
-echo '<p>Description: ' . $character['description'] . '</p>';
+    echo '<th>Stat:</th>';
 
-echo '<table>';
+    echo '<th>Points:</th>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<th>Stat:</th>';
+    echo '<tr>';
 
-echo '<th>Points:</th>';
+    echo '<td>Max Health</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['health'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Max Health</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['health'] . '</td>';
+    echo '<td>Strength</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['strength'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Strength</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['strength'] . '</td>';
+    echo '<td>Dexterity</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['dexterity'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Dexterity</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['dexterity'] . '</td>';
+    echo '<td>Charisma</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['charisma'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Charisma</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['charisma'] . '</td>';
+    echo '<td>Intelligence</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['intelligence'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Intelligence</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['intelligence'] . '</td>';
+    echo '<td>Wisdom</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['wisdom'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Wisdom</td>';
+    echo '<tr>';
 
-echo '<td>' . $character['wisdom'] . '</td>';
+    echo '<td>Constitution</td>';
 
-echo '</tr>';
+    echo '<td>' . $character['constitution'] . '</td>';
 
-echo '<tr>';
+    echo '</tr>';
 
-echo '<td>Constitution</td>';
+    echo '<p id="userLink"
+    hx-trigger="click"
+    hx-get="/user/' . $character['userID'] . '"
+    hx-push-url="true"
+    hx-target="#list">Creator: ' . $character['username'] . '</p>';
 
-echo '<td>' . $character['constitution'] . '</td>';
+    // if the character is the users character then add delete button
+    if($character['userID']== $userId) {
+        echo '<button
+                hx-delete="/character/'.$character['charID'].'"
+                hx-confirm="Are you sure you want to delete this character?"
+                hx-target="#info"
+                >
+                Delete Character
+                </button>';
 
-echo '</tr>';
-
-echo '<p id="userLink"
-hx-trigger="click"
-hx-get="/user/' . $character['userID'] . '"
-hx-push-url="true"
-hx-target="#list">Creator: ' . $character['username'] . '</p>';
-
-// if the character is the users character then add delete button
-
-if($character['userID']== $userId) {
-
-    echo '<button
-            hx-delete="/character/'.$character['charID'].'"
-            hx-target="#info"
-            >
-            Delete Character
-            </button>';
-
-}
+    }
+?>

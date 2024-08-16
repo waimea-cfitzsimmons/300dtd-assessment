@@ -1,6 +1,6 @@
-<section>
-<form     
-hx-post="/add-character"
+<article>
+    <form     
+    hx-post="/add-character"
     hx-trigger="submit"
     enctype="multipart/form-data">
 
@@ -43,4 +43,4 @@ hx-post="/add-character"
 
         <input type="submit" value="Add">
     </form>
-</section>
+</article>

@@ -6,7 +6,7 @@ consoleLog($_POST, 'POST');
 $title = $_POST['title'];
 $desc = $_POST['desc'];
 $plyrid = $_POST['creator'];
-// Insert the image into the database
+// Insert the campaign into the database
 $db = connectToDB();
 
 $query = 'INSERT INTO campaigns (`title`, `description`, `dm`) VALUES (?, ?, ?)';
@@ -16,7 +16,7 @@ try {
     $stmt->execute([$title, $desc, $plyrid]);
 }
 catch (PDOException $e) {
-    consoleError($e->getMessage(), 'DB Upload Picture');
-    die('There was an error adding picture to the database');
+    consoleError($e->getMessage(), 'DB Add Campaign');
+    die('There was an error adding campaign to the database');
 }
 header('HX-Redirect: ' . SITE_BASE . '/campaigns');

@@ -5,9 +5,11 @@ require_once "lib/db.php";
 
 consoleLog($_POST, 'Form Data');
 
+// get password and username
 $user = $_POST['user'];
 $pass = $_POST['pass'];
 
+//connect to database
 $db = connectToDB();
 $query = 'SELECT * FROM users WHERE username = ?';
 $stmt = $db->prepare($query);
@@ -32,6 +34,7 @@ if ($userData) {
         }
 }
 else {
+    echo'<section class=align>';
     echo '<h2>User account does not exit</h2>';
     echo'<p><a href="/login" role="button">Log In</a></p>';
 }

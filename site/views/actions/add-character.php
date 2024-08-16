@@ -19,7 +19,7 @@ $dex = $_POST['dexterity'];
 $int = $_POST['intelligence'];
 $con = $_POST['constitution'];
 $plyrid = $_POST['creator'];
-// Insert the image into the database
+// Insert the character into the database
 $db = connectToDB();
 
 $query = 'INSERT INTO characters (`name`, `description`, `health`, `strength`, `dexterity`, `charisma`, `intelligence`, `wisdom`, `constitution`, `creator`, `imageType`, `imageData`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
@@ -29,7 +29,7 @@ try {
     $stmt->execute([$name, $desc, $hp, $chr, $str, $wis, $dex, $int, $con, $plyrid, $imageType, $imageData]);
 }
 catch (PDOException $e) {
-    consoleError($e->getMessage(), 'DB Upload Picture');
-    die('There was an error adding picture to the database');
+    consoleError($e->getMessage(), 'DB add character');
+    die('There was an error adding character to the database');
 }
 header('HX-Redirect: ' . SITE_BASE . '/characters');

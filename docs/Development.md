@@ -83,7 +83,7 @@ Changed how the UI looks with two seperate sections for the list and the profile
 
 ![Alt text](images/images.png)
 
-## 13/08/2024
+### 13/08/2024
 
 Added back button and updated the character profile
 
@@ -91,10 +91,38 @@ enduser feedback spoke about how they would get 'trapped' on a profile or user p
 
 ![Alt text](images/ui_improved.png)
 
-# 15/08/2024
+### 15/08/2024
 
 Enduser feedback on campaign page design.
 End user commented on how it was annoying to have to go back to click on a different character in a campaign. I added a third pannel to the campaign view so that they can quickly browse through the character involved in a campaign.
 ![image](https://github.com/user-attachments/assets/361f9adb-6601-48c8-ab2c-f2e908e280e5)
 
-# 16/08/2024
+-------------------------------------------------
+
+# System testing
+
+## HTML validation
+
+Screenshots of validating the html of my website
+
+![Alt text](images/errorchar.png)
+For the character list page there are only warnings about lacking headings which are not required (The hidden messages are htmx)
+
+![Alt text](images/errorcam.png)
+Showing the HTML validating for the campaign page. Hidden messages are also HTMX or things relating to it.
+
+## Database testing
+
+Screenshots showing the website adding to the database. 
+
+![Alt text](images/walt1.png)
+database before adding character
+
+![Alt text](images/walt2.png)
+creating new character
+
+![Alt text](images/walt3.png)
+new character created
+
+![Alt text](images/walt4.png)
+character in database

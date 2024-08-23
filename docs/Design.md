@@ -49,7 +49,7 @@ I will need to make sure that as I design and evolve the website and the UI that
 
 This means that the website works as intended and that it has a good experience for the end user in terms of serving its purpose. 
 
-It is important for a website to work properly as intended otherwise there is no point in the website. Also I think I fail if my website doesn't function. 
+It is important for a website to work properly as intended otherwise there is no point in the website.
 
 I will have to error test every time I update the website and let my end users use it multiple times over the course of development in order to make sure that there are no bugs or errors in my website and that everything is working as intended. 
 
@@ -107,12 +107,11 @@ I will need to have error pages that have clear simple messages explaining what 
 
 ### Database Structure
 
-Place a image here that shows the *final design* of your database: tables, fields and relationships.
+![Alt text](images/database.png)
 
 ### User Interface Design
 
-Place images here that show your *final design* of your UI: layout, colours, etc.
-
+![image](https://github.com/waimea-cfitzsimmons/300dtd-assessment/assets/158527099/b5abc9c2-df34-4f47-8ac3-3e2902610d47)
 
 -------------------------------------------------
 
@@ -124,8 +123,11 @@ Place a image here that shows the *actual database structure* that you implement
 
 ### User Interface Design
 
-Place screenshots and notes here that show your *actual system UI* in action.
+![Alt text](images/camlist.png)
+This shows the campaign list as well as having a campaign selected. it also shows information on a character in that campaign
 
+![Alt text](images/charlist.png)
+This shows the character selection list and a character selected showing all of their information.
 
 -------------------------------------------------
 
@@ -133,15 +135,19 @@ Place screenshots and notes here that show your *actual system UI* in action.
 
 ### Meeting the Needs of the Users
 
-Replace this text with a brief evaluation of how well you met the needs of your users. Look at what you initially wrote about who they are, what specific needs they have, etc. and discuss how well the system meets those needs.
+I met the needs of the user very well and created a website that has everything the user would need in order to keep track of characters and campaign information. there is a single easy to access tab to view and browse peoples characters and it has all of their stats on the website meaning they no longer need to use paper and pen which can get lost and damaged. Users campaigns are also tracked meaning that they are also easy to follow as it displays all the information and a description about each campaign. 
 
 ### Meeting the System Requirements
 
-Replace this text with a brief evaluation of how well you met the requirements that you defined at the start of the project, etc. Look back at the list of features / functionality you initially set and discuss how well your system has implemented each one.
+Every feature was added except for a way for characters to have combat. This was due to difficulties in actually creating and designing a working combat page due to the amount of variables that take place in combat. 
 
-### Review of IMPLICATION NAME HERE
+I have kept the project true to its original functionality and creating characters, accounts and campaigns works perfectly. 
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+I have also made sure the website works smoothly and functions properly by letting end users frequently use and test it as well as letting them create their own characters and campaigns.
+
+### Review of Accessibility
+
+Accessibility was a key part of design when choosing a colour scheme and making sure that the text contrast with the background in order for people with poor vision to be able to read and see it. Buttons were also made very large and obvious to further help people.
 
 ### Review of IMPLICATION NAME HERE
 
@@ -162,4 +168,6 @@ Replace this text with brief notes showing how the UX principle was addressed in
 ### Review of UX PRINCIPLE NAME HERE
 
 Replace this text with brief notes showing how the UX principle was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+
+
 

@@ -149,25 +149,58 @@ I have also made sure the website works smoothly and functions properly by letti
 
 Accessibility was a key part of design when choosing a colour scheme and making sure that the text contrast with the background in order for people with poor vision to be able to read and see it. Buttons were also made very large and obvious to further help people.
 
-### Review of IMPLICATION NAME HERE
+I have also developed the website so that it is able to be used on mobile and other screens of different sizes in order to ensure that the website is not only usable for people with desktops or large laptops.
+![image](https://github.com/user-attachments/assets/981b76f8-3b2a-4c51-ad31-8107bcdc196a)
+As shown here there is light text with a dark background and large text in order to maximise visablility. 
+![image](https://github.com/user-attachments/assets/41f5cd13-e9a8-40d2-8c90-e4dce0eb7766)
+This shows how the website looks on a mobile view.
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+### Review of Functionality
 
-### Review of IMPLICATION NAME HERE
+I made sure that the website works as intented and is correctly functioning as I planned. I have made sure to keep using my end users for feedback and have made sure to incorperate their feedback into the website in order to ensure that it is properly working and enjoyable to use. 
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+![image](https://github.com/user-attachments/assets/19475837-159f-4dc2-89cf-6a6b91a0dcb0)
+The website working as intended allowing you to look through characters and campaigns as well as creating and adding your own. 
 
-### Review of UX PRINCIPLE NAME HERE
+### Review of Usability
 
-Replace this text with brief notes showing how the UX principle was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+I was very carful to make the website as usable as possible. I made sure everything was easy to understand. I always showed the system status if somthing went wrong. I did this by making clear messages when things went wrong and using obvious symbols and words such as a back arrow for return or easy to understand headers like 'campaigns' and 'characters'.
 
-### Review of UX PRINCIPLE NAME HERE
+![image](https://github.com/user-attachments/assets/1b52d68c-c09f-4956-9ae2-b1560c7d2722)
 
-Replace this text with brief notes showing how the UX principle was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+![image](https://github.com/user-attachments/assets/b7abd8a2-53e1-4c46-96a9-7a9d5b161daa)
 
-### Review of UX PRINCIPLE NAME HERE
+![image](https://github.com/user-attachments/assets/f516a0c8-0ea8-4cf3-bfd3-40ef45ecb68b)
 
-Replace this text with brief notes showing how the UX principle was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+### Review of User control and freedom
+
+This was important as if someone makes a mistake and cannot undo it then it can cause a lot of problems. I made sure to follow this by adding a back button allowing the user to go to the previous page they were on. I also added a 'Are you sure?' popup when someone tries to delete somthing just in case someone accidently clicks it.
+
+![image](https://github.com/user-attachments/assets/3ae75ac6-5e6b-4513-9f72-51016bc720d5)
+Page with the back button
+
+![image](https://github.com/user-attachments/assets/e3e05329-09df-4bdf-908b-1aef9464d713)
+Are you sure message
+
+### Review of Consistancy and standards
+
+I made sure that the website was usable and clearly understandable. I made sure that it was consistant with other websites when displaying what things did or meant such as a back arrow for the back button or made sure that everything is clearly labelled. 
+
+Examples of buttons:
+![image](https://github.com/user-attachments/assets/24080669-9e6e-416d-a1ea-f74d4131748f)
+
+![image](https://github.com/user-attachments/assets/4379ce9a-8382-47f3-8fa7-d94add433cd4)
+
+
+### Review of Help Users recognise, diagnose and recover from errors
+
+I added pages that tell the user what went wrong or what the error is if somthing doesnt work. Such as telling the user that they put in the wrong password, the account doesnt exist, the page doesnt exist or information is missing in the forum. 
+
+![image](https://github.com/user-attachments/assets/cf983b1a-d58e-4169-9efb-102a2d0b5dd3)
+
+![image](https://github.com/user-attachments/assets/b7abd8a2-53e1-4c46-96a9-7a9d5b161daa)
+
+![image](https://github.com/user-attachments/assets/3f058986-2e8f-4fdf-8945-8c08f25914d6)
 
 
 

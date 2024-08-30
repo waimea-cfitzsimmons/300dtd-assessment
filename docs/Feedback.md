@@ -6,8 +6,8 @@
 ## System Requirements	
 
 - [x] **A** Purpose of outcome identified and described, listing specific requirements
-- [ ] **A** End-users identified and described, listing specific requirements
-- [ ] **A** Key functionality that satisfies the purpose and end-user requirements identified
+- [x] **A** End-users identified and described, listing specific requirements
+- [x] **A** Key functionality that satisfies the purpose and end-user requirements identified
 - [x] **A** Implications, relevant to purpose and end-users, are described and linked to design of outcome
 - [x] **M** UX design principles, relevant to purpose, identified, described and linked to design of outcome
 

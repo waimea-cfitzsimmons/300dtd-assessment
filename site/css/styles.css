@@ -127,6 +127,16 @@
         transform: scale(1.1);
     }
 
+    @media screen and (max-width: 60rem) {
+        main {
+            flex: 1;
+            max-width: 200rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+    }
+
     /* FORMS -------------------------------*/
 
     #assignchar {
@@ -178,13 +188,6 @@
         }
     
     @media screen and (max-width: 60rem) {
-    
-        #campaign_page {
-            flex:1;
-            min-width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
 
         #char_list {
             flex: 1;
@@ -192,15 +195,23 @@
             display: flex;
             flex-direction: column;
         }
+
+        #campaign_page {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     @media screen and (min-width: 60rem) {
-    
+
         #campaign_page {
             flex:1;
             min-width: 100%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
 
         #char_list {

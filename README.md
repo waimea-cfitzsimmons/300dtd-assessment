@@ -1,8 +1,5 @@
 # 300dtd-assessment
 This is my level 3 NCEA project for Digital Technologies
-
-![fear](images/Fear_jade.png)
-
 It is a database-driven web app that allows users to:
 
 - register an account
@@ -17,3 +14,7 @@ The following documents support this project:
 
 - [Design and Review](Design.md)
 - [Testing & Feedback](Development.md)
+
+## Log in information
+Username: Admin
+Password: Admin
